@@ -1,0 +1,41 @@
+.statistics-section {
+  padding: 42px 0;
+  .container {
+  }
+}
+
+.statistics-title {
+  text-align: center;
+  h3 {
+    margin-bottom: 12px;
+  }
+}
+
+.statistics-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics-card {
+  border-radius: 8px;
+  border: 1px solid #949494;
+  min-width: 380px;
+  padding: 67px 0 60px;
+  text-align: center;
+  h3 {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 20px */
+    letter-spacing: 4px;
+  }
+}

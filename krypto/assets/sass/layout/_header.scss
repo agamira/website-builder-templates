@@ -1,0 +1,23 @@
+header {
+  position: sticky;
+  top: 0; /* Stick the header to the top of the viewport */
+  background-color: $whiteColor; /* Your desired background color */
+  z-index: 3;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  .logo {
+    width: 96px;
+  }
+}
+
+.navbar-items {
+  display: flex;
+  column-gap: 40px;
+}

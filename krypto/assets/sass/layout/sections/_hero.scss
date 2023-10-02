@@ -1,0 +1,38 @@
+.hero-section {
+  background-color: $primaryColor;
+  position: relative;
+  .hero-ornament {
+    position: absolute;
+    top: 126px;
+    right: 0;
+  }
+  .container {
+    .box {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      .hero-content {
+        max-width: 590px;
+        .hero-paragraph {
+          max-width: 500px;
+          @extend %p;
+          margin-bottom: 23px;
+          color: $whiteColor;
+          font-size: 16px;
+        }
+      }
+      .hero-image {
+        img {
+          width: 600px;
+          height: 600px;
+        }
+      }
+      @include laptop {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+      }
+    }
+  }
+}
