@@ -31,14 +31,14 @@
 
 .blog-card-body {
   margin-top: -4px;
-  border: 1px solid #949494;
   padding: 20px 28px;
+  background: #0c0f3f;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
 }
 
 .blog-card-title {
-  color: #031333;
+  color: $whiteColor;
   font-family: $primaryFont;
   font-size: 24px;
   font-style: normal;
