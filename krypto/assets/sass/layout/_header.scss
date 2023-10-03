@@ -1,8 +1,9 @@
 header {
   position: sticky;
   top: 0; /* Stick the header to the top of the viewport */
-  background-color: $whiteColor; /* Your desired background color */
+  background: $primaryColor; /* Your desired background color */
   z-index: 3;
+  padding: 20px 0;
 }
 
 .header-wrapper {

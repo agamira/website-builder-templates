@@ -1,11 +1,12 @@
 .advertisement-section {
-  padding-top: 119px;
-  padding-bottom: 127px;
+  padding-top: 95px;
+  padding-bottom: 103px;
   position: relative;
 }
 
 .advertisement-bg-gradient {
-  background: rgba(3, 19, 51, 0.7);
+  background: linear-gradient(279deg, #98009f -23.08%, #4848ff 104.13%);
+  opacity: 0.2;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -25,7 +26,11 @@
   display: flex;
   position: relative;
   justify-content: space-between;
+  padding: 24px;
   z-index: 1;
+  border-radius: 12px;
+  background: rgba(1, 5, 47, 0.5);
+  backdrop-filter: blur(44px);
   .h2 {
     max-width: 727px;
     color: $whiteColor;

@@ -1,6 +1,7 @@
 .hero-section {
   background-color: $primaryColor;
   position: relative;
+  padding: 50px 0 40px;
   .hero-ornament {
     position: absolute;
     top: 126px;
@@ -13,6 +14,7 @@
       display: flex;
       align-items: center;
       column-gap: 10px;
+      justify-content: space-between;
       .hero-content {
         max-width: 590px;
         .hero-paragraph {
@@ -34,5 +36,11 @@
         padding: 20px 0;
       }
     }
+  }
+}
+
+.hero-buttons {
+  .btn-primary {
+    margin-right: 20px;
   }
 }

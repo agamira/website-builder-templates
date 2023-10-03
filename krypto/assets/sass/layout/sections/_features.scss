@@ -1,16 +1,9 @@
 .features-section {
-  padding: 103px 0;
+  padding: 70px 0;
+  background: $primaryColor;
   .container {
     .box {
       text-align: center;
-      // .section-name {
-      //   @extend %h4;
-      //   margin-bottom: 20px;
-      // }
-      // .features-text {
-      //   @extend %h2;
-      //   margin-bottom: 60px;
-      // }
     }
   }
 }
@@ -24,13 +17,19 @@
 
 .service-card {
   max-width: 328px;
+  background: #0c0f3f;
+  padding: 40px 35px 30px;
+  box-sizing: border-box;
+  text-align: start;
   img {
     margin-bottom: 20px;
   }
   h3 {
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+    font-size: 30px;
   }
   p {
-    margin-bottom: 20px;
+    font-size: 15px;
+    color: $whiteColor;
   }
 }

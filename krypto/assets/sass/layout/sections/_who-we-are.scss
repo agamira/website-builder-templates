@@ -1,5 +1,6 @@
 .who-we-are-section {
   padding: 42px 0;
+  background: $primaryColor;
 }
 
 .who-we-are-content {
@@ -13,6 +14,9 @@
 .who-we-are-image {
   position: relative;
   width: 50%;
+  img {
+    border-radius: 23px;
+  }
   .user-image {
     transform: scaleX(-1);
     object-fit: cover;

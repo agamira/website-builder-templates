@@ -1,6 +1,6 @@
 // Color variables
-$primaryColor: #031333;
-$secondaryColor: #f54c1e;
+$primaryColor: #01052f;
+$secondaryColor: linear-gradient(279deg, #98009f -23.08%, #4848ff 104.13%);
 $whiteColor: #ffffff;
 $whiteColorSecondary: #f4f3f3;
 $blackColor: #000000;
@@ -8,7 +8,22 @@ $grayColor: #949494;
 
 // Gradient
 
-$gradient: linear-gradient(1deg, #fd5c30 0.53%, rgba(0, 0, 0, 0) 70.68%);
+$gradient: linear-gradient(
+  1deg,
+  #000fb0 0.53%,
+  rgba(0, 13, 145, 0.83) 7.7%,
+  rgba(0, 11, 129, 0.73) 13.49%,
+  rgba(0, 4, 45, 0.26) 101.66%,
+  rgba(0, 0, 0, 0) 101.68%
+);
+
+$gradient-primary: linear-gradient(279deg, #98009f -23.08%, #4848ff 104.13%);
+$gradient-red: linear-gradient(
+  1deg,
+  #f50103 0.53%,
+  rgba(161, 1, 2, 0.66) 12.96%,
+  rgba(0, 0, 0, 0) 101.68%
+);
 
 // Fonts
 $primaryFont: "Poppins", sans-serif;
