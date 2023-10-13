@@ -1,25 +1,20 @@
 .features-section {
-  padding: 103px 0;
+  padding: 70px 0;
   .container {
     .box {
       text-align: center;
-      // .section-name {
-      //   @extend %h4;
-      //   margin-bottom: 20px;
-      // }
-      // .features-text {
-      //   @extend %h2;
-      //   margin-bottom: 60px;
-      // }
     }
   }
 }
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 108px;
   justify-content: center;
+  @include laptop {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 
 .service-card {

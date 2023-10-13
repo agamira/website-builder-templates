@@ -1,5 +1,5 @@
 .blog-section {
-  padding: 51px 0;
+  padding: 31px 0;
 }
 
 .blog-title {
@@ -11,12 +11,23 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 20px 0;
+  @include laptop {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
 }
 
 .blog-card {
   max-width: 387px;
   width: 33.33%;
   border-radius: 16px;
+  @include laptop {
+    min-width: 387px;
+  }
+  @include tablet {
+    min-width: 280px;
+  }
 }
 
 .blog-card-image {

@@ -8,11 +8,18 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  @include tablet {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 .who-we-are-image {
   position: relative;
   width: 50%;
+  @include tablet {
+    margin-bottom: 50px;
+  }
   .user-image {
     transform: scaleX(-1);
     object-fit: cover;
@@ -31,4 +38,7 @@
 
 .who-we-are-text {
   width: 50%;
+  @include tablet {
+    width: 100%;
+  }
 }
