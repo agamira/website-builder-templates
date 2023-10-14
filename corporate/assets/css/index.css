@@ -842,12 +842,12 @@ header .container {
 }
 @media (max-width: 767px) {
   .latest-project-card {
-    min-width: 70%;
+    min-width: 48%;
   }
 }
 @media (max-width: 479px) {
   .latest-project-card {
-    min-width: 100%;
+    min-width: 75%;
   }
 }
 

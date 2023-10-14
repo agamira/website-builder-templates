@@ -34,10 +34,10 @@
     width: 45%;
   }
   @include tablet {
-    min-width: 70%;
+    min-width: 48%;
   }
   @include mobile {
-    min-width: 100%;
+    min-width: 75%;
   }
 }
 
