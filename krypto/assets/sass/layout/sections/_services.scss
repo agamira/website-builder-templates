@@ -1,6 +1,9 @@
 .our-services-section {
   background-color: $primaryColor;
   padding: 125px 0;
+  @include tablet {
+    padding: 50px 0;
+  }
 }
 
 .our-services-title {
@@ -28,6 +31,9 @@
   height: 639px;
   opacity: 0.8;
   border-radius: 20px;
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .our-services-card-gradient {
@@ -45,6 +51,7 @@
   position: absolute;
   left: 32px;
   bottom: 54px;
+  margin-right: 32px;
   .h3 {
     color: $whiteColor;
     font-size: 36px;

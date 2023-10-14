@@ -17,12 +17,30 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 20px 0;
+  @include laptop {
+    flex-wrap: wrap;
+  }
+  @include tablet {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
 }
 
 .latest-project-card {
   width: 24%;
   position: relative;
   border-radius: 20px;
+  @include laptop {
+    width: 45%;
+  }
+  @include tablet {
+    min-width: 70%;
+  }
+  @include mobile {
+    min-width: 100%;
+  }
 }
 
 .latest-project-card-image {

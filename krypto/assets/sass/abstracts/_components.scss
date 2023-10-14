@@ -74,6 +74,22 @@
 .btn-secondary {
   @extend %btn-secondary;
 }
+
+.burger-btn {
+  display: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-right: 40px;
+  @include laptop {
+    display: inline;
+  }
+  @include mobile {
+    margin-right: 20px;
+  }
+}
+
 ///
 
 // Headings
@@ -142,6 +158,10 @@
 
 .h2 {
   @extend %h2;
+  margin-bottom: 40px;
+  @include tablet {
+    font-size: 36px;
+  }
 }
 
 %h1 {
@@ -161,6 +181,9 @@
 
 .h1 {
   @extend %h1;
+  @include tablet {
+    font-size: 32px;
+  }
 }
 //
 
@@ -234,6 +257,10 @@
 ol {
   list-style: none;
   counter-reset: item;
+  @include tablet {
+    margin: 0 auto;
+    width: 275px;
+  }
   li {
     display: flex;
     margin-bottom: 36px;

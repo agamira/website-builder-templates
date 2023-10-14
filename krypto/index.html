@@ -22,31 +22,37 @@
                 src="https://ucarecdn.com/3d4020d3-1098-4cee-bdb6-c211fa8c8b35/krypto.png"
                 alt=""
             /></a>
+            <button class="burger-btn closed">
+              <img
+                src="https://ucarecdn.com/5e0e5b10-8ab8-46b4-b260-d8653771629d/burgerbtnwhite.svg"
+                alt="burger-btn"
+              />
+            </button>
           </span>
-          <nav class="navbar">
-            <ul class="navbar-items">
-              <li class="navbar-item">
-                <a class="nav-link active" href="#home">home</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#features">features</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#about">about</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#services">services</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#projects">projects</a>
-              </li>
-            </ul>
-          </nav>
-          <span class="button-wrapper">
-            <a class="btn-primary header-btn" href="#contact"
-              >Contact us today</a
-            >
-          </span>
+          <div class="nav">
+            <nav class="closed">
+              <ul class="navbar-items">
+                <li class="navbar-item">
+                  <a class="nav-link active" href="#home">home</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#features">features</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#about">about</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#services">services</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#projects">projects</a>
+                </li>
+              </ul>
+            </nav>
+            <span class="button-wrapper">
+              <a class="btn-primary" href="#contact">Contact us today</a>
+            </span>
+          </div>
         </div>
       </div>
     </header>
@@ -78,10 +84,12 @@
             <h2 class="h2">awesome service with our tools</h2>
             <div class="features-list">
               <div class="service-card">
-                <img
-                  src="https://ucarecdn.com/1f1a2ac8-8aff-4dbd-bf27-b5221f23f3ae/sheet.png"
-                  alt="document"
-                />
+                <div class="service-card-image">
+                  <img
+                    src="https://ucarecdn.com/1f1a2ac8-8aff-4dbd-bf27-b5221f23f3ae/sheet.png"
+                    alt="document"
+                  />
+                </div>
                 <h3 class="h3">App Development</h3>
                 <p class="p">
                   Helping families live intelligently means we’re always working
@@ -89,10 +97,12 @@
                 </p>
               </div>
               <div class="service-card">
-                <img
-                  src="https://ucarecdn.com/6452e28a-4614-4483-9959-bb6f8bfc8d86/computer.png"
-                  alt="document"
-                />
+                <div class="service-card-image">
+                  <img
+                    src="https://ucarecdn.com/6452e28a-4614-4483-9959-bb6f8bfc8d86/computer.png"
+                    alt="document"
+                  />
+                </div>
                 <h3 class="h3">Cloud Storage</h3>
                 <p class="p">
                   Helping families live intelligently means we’re always working
@@ -100,10 +110,11 @@
                 </p>
               </div>
               <div class="service-card">
-                <img
-                  src="https://ucarecdn.com/af9c0764-49b5-4eb2-b9e9-c689db0a2d5d/magnifier.png"
-                  alt="document"
-                />
+                <div class="service-card-image">
+                  <img
+                    src="https://ucarecdn.com/af9c0764-49b5-4eb2-b9e9-c689db0a2d5d/magnifier.png"
+                  />
+                </div>
                 <h3 class="h3">UX Planning</h3>
                 <p class="p">
                   Helping families live intelligently means we’re always working
@@ -459,6 +470,46 @@
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        /// Burger btn
+        const menuButton = document.querySelector(".burger-btn");
+        const menu = document.querySelector(".nav");
+
+        function toggleMenu() {
+          if (menu.classList.contains("closed")) {
+            menu.classList.remove("closed");
+            menu.classList.add("opened");
+          } else {
+            menu.classList.remove("opened");
+            menu.classList.add("closed");
+          }
+        }
+
+        // Function to check if the viewport is in desktop mode (greater than 768px)
+        function isDesktop() {
+          return window.innerWidth > 1023;
+        }
+
+        // Toggle the menu based on the viewport width
+        function toggleMenuBasedOnViewport() {
+          if (isDesktop()) {
+            menu.classList.remove("closed");
+            menu.classList.add("opened");
+          } else {
+            menu.classList.remove("opened");
+            menu.classList.add("closed");
+          }
+        }
+
+        menuButton.addEventListener("click", toggleMenu);
+
+        // Initially toggle the menu based on viewport width
+        toggleMenuBasedOnViewport();
+
+        // Listen for window resize events to adjust the menu
+        window.addEventListener("resize", toggleMenuBasedOnViewport);
+
+        ///
+
         // Get all the navigation links
         const navLinks = document.querySelectorAll("nav a");
 

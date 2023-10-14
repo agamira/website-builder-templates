@@ -4,23 +4,103 @@ header {
   background: $primaryColor; /* Your desired background color */
   z-index: 3;
   padding: 24px 0;
+  .container {
+    padding: 0;
+  }
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0 10%;
+  @include laptop {
+    flex-direction: column;
+  }
 }
 
 .logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include laptop {
+    width: 100%;
+  }
   .logo {
     width: 96px;
+    margin-left: 20px;
+    @include laptop {
+      margin-left: 40px;
+    }
+    @include mobile {
+      margin-left: 20px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  max-width: 895px;
+  width: 100%;
+  gap: 0 5%;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  &.closed {
+    height: 0px;
+  }
+  @include laptop {
+    flex-direction: column;
+    height: 360px;
+  }
+}
+
+nav {
+  @include laptop {
+    width: 100%;
   }
 }
 
 .navbar-items {
   display: flex;
   column-gap: 40px;
+  @include laptop {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    li {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      a {
+        padding: 20px 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.button-wrapper {
+  &.closed {
+    display: none;
+  }
+  &.opened {
+    display: block;
+  }
+  margin-right: 20px;
+  @include desktop {
+    .btn-primary {
+      padding: 20px 55px;
+    }
+  }
+  @include laptop {
+    margin-right: 0;
+    margin-bottom: 20px;
+    .btn-primary {
+      font-size: 16px;
+      padding: 20px 45px;
+    }
+  }
 }
 
 .header-btn {

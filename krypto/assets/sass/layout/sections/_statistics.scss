@@ -1,8 +1,6 @@
 .statistics-section {
-  padding: 42px 0;
+  padding: 80px 0;
   background: $primaryColor;
-  .container {
-  }
 }
 
 .statistics-title {
@@ -22,11 +20,15 @@
 
 .statistics-card {
   border-radius: 8px;
-  // border: 1px solid #949494;
+  border: 1px solid #949494;
   min-width: 380px;
+  max-width: 380px;
   padding: 67px 0 60px;
-  background: #0c0f3f;
   text-align: center;
+  width: 100%;
+  @include tablet {
+    min-width: 250px;
+  }
   h3 {
     font-size: 52px;
     font-style: normal;

@@ -1,6 +1,9 @@
 .features-section {
   padding: 70px 0;
   background: $primaryColor;
+  @include laptop {
+    padding: 50px 0;
+  }
   .container {
     .box {
       text-align: center;
@@ -11,8 +14,12 @@
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 108px;
+  gap: 40px 108px;
   justify-content: center;
+  @include laptop {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 
 .service-card {
