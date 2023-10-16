@@ -1,0 +1,54 @@
+.advertisement-section {
+  padding-top: 95px;
+  padding-bottom: 103px;
+  position: relative;
+}
+
+.advertisement-bg-gradient {
+  background: $gradient-primary;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advertisement-bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advertisement-content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 24px;
+  z-index: 1;
+  border-radius: 12px;
+  background: rgba(1, 5, 47, 0.5);
+  backdrop-filter: blur(44px);
+  gap: 30px;
+  @include desktop {
+    flex-direction: column;
+    align-items: center;
+  }
+  .h2 {
+    max-width: 727px;
+    color: $whiteColor;
+    margin-bottom: 0;
+    @include desktop {
+      text-align: center;
+    }
+  }
+  .btn-holder {
+    display: flex;
+    align-items: center;
+    .btn-primary {
+      padding: 16px 40px;
+    }
+  }
+}

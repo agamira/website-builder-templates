@@ -1,0 +1,30 @@
+// Color variables
+$primaryColor: #101010;
+$secondaryColor: #f50103;
+$whiteColor: #ffffff;
+$whiteColorSecondary: #f4f3f3;
+$blackColor: #181818;
+$grayColor: #949494;
+
+// Gradient
+
+$gradient: linear-gradient(0deg, #f50103 12.53%, rgba(0, 0, 0, 0) 59.68%);
+
+$gradient-primary: linear-gradient(
+  0deg,
+  #f50103 12.53%,
+  rgba(0, 0, 0, 0) 59.68%
+);
+
+$gradient-red: linear-gradient(0deg, #f50103 12.53%, rgba(0, 0, 0, 0) 59.68%);
+
+// Fonts
+$primaryFont: "Lato", sans-serif;
+
+/* Breakpoints */
+$breakpoints: (
+  S: 479px,
+  M: 767px,
+  L: 1023px,
+  XL: 1279px,
+);

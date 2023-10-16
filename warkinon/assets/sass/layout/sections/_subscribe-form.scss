@@ -1,0 +1,50 @@
+.subscribe-form-section {
+  padding-top: 145px;
+  padding-bottom: 154px;
+  background: $primaryColor;
+}
+
+.subscribe-form-content {
+  display: flex;
+  column-gap: 67px;
+  padding: 75px 197px 65px 203px;
+  background: linear-gradient(90deg, #fd5c30 0%, $primaryColor 50%);
+}
+
+.subscribe-form-text {
+  max-width: 470px;
+}
+
+.subscribe-form-title {
+  color: $whiteColor;
+  font-family: $primaryFont;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
+.subscribe-form-paragraph {
+  color: $whiteColor;
+  font-family: $primaryFont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.subscribe-form-text {
+  .p {
+    color: $whiteColor;
+  }
+}
+
+.subscribe-form-line {
+  border-left: 1px solid $whiteColor;
+}
+
+.subscribe-form-btn {
+  display: flex;
+  align-items: center;
+}
