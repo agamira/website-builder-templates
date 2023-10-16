@@ -1,0 +1,44 @@
+.who-we-are-section {
+  padding: 45px 0;
+}
+
+.who-we-are-content {
+  display: flex;
+  column-gap: 61px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @include tablet {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.who-we-are-image {
+  position: relative;
+  width: 50%;
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  .user-image {
+    transform: scaleX(-1);
+    object-fit: cover;
+    width: 387px;
+    height: 474px;
+  }
+  .card-image {
+    width: 237.678px;
+    height: 217px;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    box-shadow: -1.11143px -1.11143px 12.22572px 8.89144px rgba(121, 111, 109, 0.1);
+  }
+}
+
+.who-we-are-text {
+  width: 50%;
+  @include tablet {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+// Color variables
+$primaryColor: #f2f2f2;
+$secondaryColor: #ea3d3c;
+$whiteColor: #ffffff;
+$whiteColorSecondary: #7b7d84;
+$blackColor: #333;
+$grayColor: #949494;
+
+// Gradient
+$gradient: linear-gradient(0deg, #ea3d3c 12.53%, rgba(0, 0, 0, 0) 59.68%);
+
+// Fonts
+$secondaryFont: "Otomanopee One", sans-serif;
+$primaryFont: "Poppins", sans-serif;
+
+/* Breakpoints */
+$breakpoints: (
+  S: 479px,
+  M: 767px,
+  L: 1023px,
+  XL: 1279px,
+);

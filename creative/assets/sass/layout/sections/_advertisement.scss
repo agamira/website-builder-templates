@@ -1,0 +1,51 @@
+.advertisement-section {
+  padding-top: 119px;
+  padding-bottom: 127px;
+  position: relative;
+}
+
+.advertisement-bg-gradient {
+  background: rgba(234, 61, 60, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advertisement-bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advertisement-content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 30px;
+  z-index: 1;
+  @include desktop {
+    flex-direction: column;
+    align-items: center;
+  }
+  .h2 {
+    max-width: 760px;
+    color: $whiteColor;
+    margin-bottom: 0;
+    @include desktop {
+      text-align: center;
+    }
+  }
+  .btn-holder {
+    display: flex;
+    align-items: center;
+    .btn-primary {
+      padding: 16px 40px;
+      color: $secondaryColor;
+      background-color: $whiteColor;
+    }
+  }
+}
