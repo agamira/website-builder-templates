@@ -23,7 +23,10 @@
                 alt=""
             /></a>
             <button class="burger-btn closed">
-              <img src="https://ucarecdn.com/3c03f861-3588-4ad1-ba2c-0af97ed9fe44/burgerbtn.svg" alt="burger-btn" />
+              <img
+                src="https://ucarecdn.com/3c03f861-3588-4ad1-ba2c-0af97ed9fe44/burgerbtn.svg"
+                alt="burger-btn"
+              />
             </button>
           </span>
           <div class="nav">
@@ -461,7 +464,6 @@
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        /// Burger btn
         const menuButton = document.querySelector(".burger-btn");
         const menu = document.querySelector(".nav");
 
@@ -475,12 +477,10 @@
           }
         }
 
-        // Function to check if the viewport is in desktop mode (greater than 768px)
         function isDesktop() {
           return window.innerWidth > 1023;
         }
 
-        // Toggle the menu based on the viewport width
         function toggleMenuBasedOnViewport() {
           if (isDesktop()) {
             menu.classList.remove("closed");
@@ -493,44 +493,33 @@
 
         menuButton.addEventListener("click", toggleMenu);
 
-        // Initially toggle the menu based on viewport width
         toggleMenuBasedOnViewport();
 
-        // Listen for window resize events to adjust the menu
         window.addEventListener("resize", toggleMenuBasedOnViewport);
 
-        ///
-
-        // Get all the navigation links
         const navLinks = document.querySelectorAll("nav a");
 
-        // Define options for the Intersection Observer
         const observerOptions = {
-          root: null, // Use the viewport as the root
-          rootMargin: "0px", // No margin
-          threshold: 0.6, // Trigger when 70% of the section is in view
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.6,
         };
 
-        // Create an Intersection Observer instance
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              // Remove the "active" class from all links
               navLinks.forEach((link) => link.classList.remove("active"));
 
-              // Get the section's id and find the corresponding link
               const sectionId = entry.target.id;
               const correspondingLink = document.querySelector(
                 `nav a[href="#${sectionId}"]`
               );
 
-              // Add the "active" class to the corresponding link
               correspondingLink?.classList.add("active");
             }
           });
         }, observerOptions);
 
-        // Observe each section
         document.querySelectorAll("section").forEach((section) => {
           observer.observe(section);
         });
